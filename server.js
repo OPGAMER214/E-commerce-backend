@@ -3,7 +3,9 @@ const connectDB = require("./config/db");
 const userRoute = require("./routes/userRoute");
 const productRoutes = require("./routes/productRoute");
 const orderRoutes = require("./routes/orderRoute");
-
+require("./models/User");
+require("./models/Product");
+require("./models/Order");
 const app = express();
 
 app.use("/api/products", productRoutes);
