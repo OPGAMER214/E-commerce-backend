@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
     try {
         await
-        mongoose.connect("mongodb+srv://opgamer:Panther211@opgamercluster.urfawp3.mongodb.net/?appName=OPGAMERCLUSTER");
+        mongoose.connect("mongodb+srv://OPGAMER:Panther214@opgamercluster.ybmx7nv.mongodb.net/?appName=OPGAMERCLUSTER");
         console.log("MongoDB Connected");
         
     } catch (error) {
@@ -10,4 +10,4 @@ const connectDB = async () => {
         process.exit(1);
     }
 };
-module.exports = connectDB
+module.exports = connectDB;
